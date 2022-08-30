@@ -92,10 +92,6 @@ const getBlobByObjectUrl = (objectUrl: string) => {
   return fetch(objectUrl).then(res => res.blob())
 }
 
-const getRandomValue = (min: number, max: number) => {
-  return Math.round(Math.random() * (max - min) + min)
-}
-
 /**
  * 交错截图
  */
@@ -124,8 +120,6 @@ const cropCrossImage = greenlet(async (url: string, {
   }
 
   const incrIndex = () => {
-    // index = getRandomValue(0, chunk - 1)
-
     const next = index + 1
     index = canvasArr[next] ? next : 0
   }
