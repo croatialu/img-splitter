@@ -22,6 +22,10 @@ imgSplitter(
 )
 
 ```
+## 尝试
+
+[codesanbox](https://codesandbox.io/s/morning-cdn-nbo2w4?file=/src/App.js)
+
 ## 原理
 使用 `OffscrenCanvas`， 在 `webworker` 线程中去做图片的裁剪，提取等处理， 并生成多张图片。
 
